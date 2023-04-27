@@ -1,0 +1,263 @@
+// main
+main{
+    // Seccion principal
+    .section_main{
+        @include box-flex(center, center, nowrap);
+        background-color: $color-second;
+        color: $color-letter;
+        @include extra-desk{
+            flex-wrap: wrap;  
+        }
+        
+        .img-main{
+            @extend .background_style;
+            width: 60%;
+            height: $height;
+            z-index: 0;  
+        }
+        .container-title{
+            text-align: center;
+            margin-right: 50px;
+            z-index: 1;
+            font-size: 30px;
+            @include mobile{
+                margin-right: 0px;
+            }
+            .title-portada{
+                line-height: 60px;
+                font-style: italic;
+                font-family:$font-second;
+                letter-spacing: 2px;
+                text-shadow: $shadow-one;
+                @include mobile {
+                    font-size: 35px;      
+                }
+                @include mini-mobile{
+                    font-size: 30px;
+                }
+            }
+            .btn_portada{
+                font-size: 22px;
+                width: 180px;
+                height: 50px;
+                border-radius: 10px;
+                margin-top: 35px;
+                font-family:$font-ppal;
+                background-color: $color-btn;
+                .btn_link{
+                    @extend .item__nav;
+                    color: #4d4837;
+                    &:hover{
+                        color: #ebeae0;
+                    }
+                } 
+                @include mobile{
+                    margin-top: 5px;
+                    margin-bottom: 25px;
+                } 
+            }
+        }
+    }
+    // Sección recetas destacadas
+    .container_section_destacada{
+        @include box-flex(center, center, nowrap);
+        width: $width;
+        height: 200px;
+        background: $background-lin;
+        .title__section2, .paragraph__section2{
+            font-size: 30px;
+            margin-left: 25px;
+            text-align: center;
+            color: $color-paragraph;
+        }   
+    }
+    // Carrousel
+    .carrousel{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        .elementos_destacados{
+            flex: 1 0 auto;
+            width: 300px;
+            height: 300px;
+            margin: 25px;
+            padding: 10px;
+        
+            .img_galeria{
+                width: $width;
+                height: 100%;
+                border-radius: 5px;
+                box-shadow: 0 0 6px black;
+                transition: all 0.8s ease;
+                &:hover{
+                    transform: scale(0.9);
+                }
+            } 
+        }
+    }
+    // Sección Tips
+    .recipes__featured{
+        width: $width;
+        height: 230px;
+        text-align: center;
+        background: $background-lin;
+        padding: 15px;
+        @include extra-desk{
+            height: 300px;
+        }
+        .title__section2, .paragraph__section2{
+            font-size: 28px;
+            margin-top: 15px;
+            font-family:$font-second;
+            color: $color-paragraph;
+            @include tablet{
+                font-size: 20px;
+                margin-top: 0px;
+            }
+        }
+        .btn_tips{
+            border-radius: 5px;
+            width: 100px; 
+            height: 40px;
+            margin-top: 25px;
+            background-color: $color-btn;
+            border: $border;
+            @include mini-mobile{
+                margin-top: 10px;
+            }
+            &:hover{
+                box-shadow: 0 0 6px black
+            }
+            .btn_a{
+                @extend .item__nav;
+                font-size: 20px;
+                color: $color-paragraph;
+                text-decoration: none;
+                .fa-thumbs-up{
+                    margin-right: 5px;
+                }   
+            }
+        }
+    }
+// Sección Form
+    .form-section{
+        @include displayForm();
+        background-color: $color-letter;  
+        .container_form{
+            @extend .background_style;
+            width: 50%;
+            background-image: url(../img/Img-form.jpg);
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 5px;
+            @include tablet{
+                width: 100%;
+            }
+                .title-form{
+                    font-size: 32px;
+                }
+                form{
+                    label{
+                        font-size: 14px;
+                        text-transform: capitalize;
+                    }
+                    input, textarea{
+                        padding: 15px 20px;
+                        border-radius: 3px;
+                        border: 2px solid transparent;
+                        width: 90%;
+                        margin: 3px 0;
+                        &::placeholder{
+                            font-size: 16px;
+                            color: #5D698D;
+                            border: $border;
+                        }
+                    }
+                    .btn-form{
+                        @include displayForm();
+                        width: $width;
+                        margin-top: 15px;
+                        .btn-send{
+                            width: 40%;
+                            height: 40px;
+                            border: $border;
+                            border-radius: 5px;
+                            background-color: $color-btn;
+                            &:hover{
+                                background-color:rgb(227, 140, 9);
+                                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+                            }
+                        }
+                    }
+                }
+            // Sección Social Media
+                .network{
+                    @include displayForm();
+                    margin-top: 30px;
+                    @include tablet{
+                        text-align: center;
+                        margin-top: 20px;
+                        margin-bottom: 8px;
+                    }
+                }
+                .social_media{
+                    width: $width;
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 20px 20px 20px;
+                    margin-top: 20px;
+                    @include tablet{
+                        margin: 0px;
+                    }
+                    .logofa, .logoIg, .logoYT, .logoTT{
+                        padding: 10px 30px;
+                        border-radius: 3px;
+                        display: inline-block;
+                        font-size: 24px;
+                        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+                        outline: none;
+                        border: $border;
+                        @include tablet{
+                            padding: 5px 20px;
+                        }
+                        @include mobile{
+                            padding: 5px 15px;
+                        }
+                        @include mini-mobile{
+                            padding: 3px 10px;
+                        }
+                        &:hover{
+                            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+                            0px 10px 20px rgba(43, 20, 11, 0.315);
+                            transition: all .5s ease-in-out 0s;
+                        }
+                        &.logofa:hover{
+                            background-color: #1771e6;
+                            .fa-facebook-f{
+                                color: $color-media;
+                            }
+                        }
+                        &.logoIg:hover{
+                        background-color: $color-media;
+                            .fa-instagram{
+                                background:linear-gradient(49deg, #f9ed32,#ee2a7b,#002aff) ;
+                                color: $color-media;
+                                border-radius: 7px;
+                            }
+                        }
+                        &.logoYT:hover{
+                            .fa-youtube{
+                                color: red;
+                            }
+                        }
+                        &.logoTT:hover{
+                            background-color: #100c0b;
+                            .fa-tiktok{
+                                color: $color-media;
+                            }
+                        }  
+                    }
+                }  
+        }
+    }
+}
