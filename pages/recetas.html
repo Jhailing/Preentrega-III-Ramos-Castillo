@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <title>Andrés Cooking con Bootstrap</title>
+
+    <!-- Link Fontawesome -->
+    <script src="https://kit.fontawesome.com/587aee5973.js" crossorigin="anonymous"></script>
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!-- Logo -->
+        <nav>
+            <div class="nav-container">
+                <h1 class="title__header">@andrés cooking</h1>
+
+                <label for="menu" class="nav__label">
+                <i class="fa-solid fa-bars" style="color: #f5f4f4;"></i>
+                </label>
+                <input type="checkbox" class="nav_input" id="menu">
+
+                <div class="nav-menu">
+                    <a class="item__nav" href="./pages/glosario.html"> Glosario</a>
+                    <a class="item__nav" href="./pages/recomienda.html"> Tienda Cooking</a> 
+                    <a class="item__nav" href="/pages/recetas.html">Recetas</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main class="main_recipes">
+        <!-- Botón de Retorno al inicio -->
+        <div class="to-back">
+            <a class="btn__return" href="/index.html">Inicio > Recetas</a> 
+        </div>
+        <!-- Buscador de Recetas -->
+        <div class="recipes-title">
+                <input type="text" class="input_recipes" placeholder="Encuentra tu receta" aria-label="Encuentra tu receta">
+                <button class="search-btn" type="button">
+                    <!-- <i class="bi bi-search-heart"></i> -->
+                    <i class="fa-solid fa-magnifying-glass" style="color: #171b21;"></i>
+                </button>
+        </div>
+        <!-- Parrafo principal -->
+        <div class="container_paragraph">
+            <h1>Galeria de Recetas</h1>
+            <p class="paragraph__recipes">Animate a prepararlas desde la más fácil a la más compleja, enamorate de cada ingrediente, <br> y comparte conmigo etiquetándome con el hashtag #andrescooking</p>
+        </div>
+        <!-- Galeria -->
+        <div class="container-galeria">
+            <!-- Receta 1 -->
+            <div class="card">
+            <img class="img-box" src="../img/Ensalada.jpg" alt="Receta Galeria">
+            </div>
+            <!-- Receta 2 -->
+            <div class="card">
+            <img class="img-box" src="../img/PastaAmatriciana.jpg" alt="Receta Galeria">
+            </div>
+            <!-- Receta 3 -->
+            <div class="card">
+            <img class="img-box" src="../img/Milanesa de Carne.jpg" alt="Receta Galeria">
+            </div>
+            <!-- Receta 4 -->
+            <div class="card">
+            <img class="img-box" src="../img/Queso-Brie-horno.jpg" alt="Receta Galeria">
+            </div>
+            <!-- Receta 5 -->
+            <div class="card">
+            <img class="img-box" src="../img/Risotto Camarones.jpg" alt="Receta Galeria">
+            </div>
+            <!-- Receta 6 -->
+            <div class="card">
+            <img class="img-box" src="../img/Tacos-Carne-Asada .jpg" alt="Receta Galeria">
+            </div>
+            <!-- Receta 7 -->
+            <div class="card">
+            <img class="img-box" src="../img/Torta de Naranja.jpg" alt="Receta Galeria">
+            </div>
+            <!-- Receta 8 -->
+            <div class="card">
+            <img class="img-box" src="../img/Risotto-Funghi.jpg" alt="Receta Galeria">
+            </div>
+            <!-- Receta 9 -->
+            <div class="card">
+            <img class="img-box" src="../img/Canele.jpg" alt="Receta Galeria">
+            </div>  
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <span>Sitio Web creado con &#128151 por &copy;JhaiRamos</span>
+        </div>
+    </footer>
+    </body>
+</html>
