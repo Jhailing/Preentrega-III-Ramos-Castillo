@@ -560,6 +560,18 @@ main .form-section .container_form .social_media .logofa.logoTT:hover .fa-tiktok
   color: #100c0b;
 }
 
+.paragraph__tips {
+  font-size: 20px;
+}
+@media screen and (max-width: 860px) {
+  .paragraph__tips {
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;
+  }
+}
+
 footer {
   height: 100px;
   margin-top: 1px;

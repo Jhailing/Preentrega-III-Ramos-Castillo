@@ -442,7 +442,16 @@ main{
             }
         }
 }
-    
+// Tips main HTML 
+.paragraph__tips{
+    font-size: 20px; 
+    @include tablet {
+        width: 90%;
+        text-align: center;
+        font-size: 18px;
+        margin: 5px;
+    }
+}
 
 
 
