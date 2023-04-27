@@ -18,28 +18,159 @@
 </head>
 <body>
     <!--Header-->
-    <header class="header">
-        <div class="logo__header">
-            <h1 class="title__header">@andrés cooking</h1>
-        </div>
-        <!-- Menú de Navegación -->
-        <div class="container__nav">  
-            <nav class="nav__header">
-                <ul class="list__nav">
-                    <li><a class="item__nav" href="./pages/glosario.html"> Glosario</a></li>
-                    <li><a class="item__nav" href="./pages/recomienda.html"> Tienda Cooking</a> </li>
-                    <li><a class="item__nav" href="#Contacto">Contacto</a></li>
-                    <li><a class="item__nav" href="./pages/recetas.html">Recetas</a></li>
-                </ul>
-            </nav>
-            
-        </div>
-        <!-- Buscador de Recetas -->
-        <div class="container__input">
-            <input type="text" class="input__header" placeholder="Buscar recetas" >
-            <button class="btn__microphone"><i class="fa-solid fa-microphone"></i> </button>
-            <button class="btn__search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i> </button> 
-        </div>
+    <header>
+        <!-- Logo -->
+        <nav>
+            <div class="nav-container">
+                <h1 class="title__header">@andrés cooking</h1>
+
+                <label for="menu" class="nav__label">
+                <i class="fa-solid fa-bars" style="color: #f5f4f4;"></i>
+                </label>
+                <input type="checkbox" class="nav_input" id="menu">
+
+                <div class="nav-menu">
+                    <a class="item__nav" href="./pages/glosario.html"> Glosario</a>
+                    <a class="item__nav" href="./pages/recomienda.html"> Tienda Cooking</a> 
+                    <a class="item__nav" href="#Contacto">Contacto</a>
+                    <a class="item__nav" href="./pages/recetas.html">Recetas</a>
+                </div>
+            </div>
+        </nav>
     </header>
+
+    <!-- Main -->
+    <main>
+        <!-- section principal -->
+        <section class="section_main">
+            <img class="img-main" src="./img/Andrescooking-1.jpg" alt="imagen portada">
+            <div class="container-title">
+                <h1 class="title-portada">Ven y prepara
+                mis <br> #Recetascooking</h1> 
+                <button class="btn_portada">
+                    <a class="btn_link" href="./pages/">
+                    <i class="fa-solid fa-share fa-fade"></i>  Ingresa aqui</a>
+                </button>
+            </div>
+        </section>
+        <!-- Sección Recetas destacadas -->
+        <section class="container_section_destacada">
+            <div>
+                <h2 class="title__section2">Mmm... ujuuuu!!!</h2>
+                <h3 class=" paragraph__section2">Destacadas Cooking de la semana... </h3>   
+            </div>
+        </section>
+        <!-- Carrousel -->
+        <div class="carrousel">
+            <div class="elementos_destacados">
+                <a href="https://www.instagram.com/p/CoSZoZlPUgh/" target="_blank">
+                    <img class="img_galeria" src="./img/Canele.jpg" alt="Galeria Imagen">
+                </a>
+            </div>
+            <div class="elementos_destacados">
+                <a href="https://www.instagram.com/p/CpQFxD6OEI0/" target="_blank">
+                    <img class="img_galeria" src="./img/recipe 1.jpg" alt="Galeria Imagen">
+                </a>
+            </div>
+            <div class="elementos_destacados">
+                <a href="https://www.instagram.com/p/CoKmHsAtL9d/" target="_blank">
+                    <img class="img_galeria" src="./img/Garlic Naan.jpg" alt="Galeria Imagen">
+                    </a>
+            </div>
+            <div class="elementos_destacados">
+                <a href="https://www.instagram.com/p/Cp7jqdkPD17/" target="_blank">
+                    <img class="img_galeria" src="./img/arepa-pernil2.jpg" alt="Galeria Imagen">
+                    </a>
+            </div>
+            <div class="elementos_destacados">
+                <a href="https://www.instagram.com/p/CqvFaSWJwv1/" target="_blank">
+                    <img class="img_galeria" src="./img/waffles.jpg" alt="Galeria Imagen">
+                    </a>
+            </div>
+        </div>
+        <!-- Sección Tips -->
+        <div class="recipes__featured">
+            <h2 class="title__section2">"Si tienes medio limón con clavos de olor en tu nevera, te ayudará absorver esos malos olores y a la vez aromatizará tu nevera"</h2>
+            <h3 class="paragraph__section2">Descubre más de nuestros #CookingTips haciendo click</h3> 
+            <button class=" btn_tips">
+                <a class="btn_a" href="./pages/tips.html">
+                    <i class="fa-solid fa-thumbs-up" style="color: #2c2b25;"></i>Tips
+                </a>
+            </button>
+        </div>
+        <!-- Form -->
+        <section class="form-section">
+            <div class="container_form">
+                <h2 class="title-form">Contáctame</h2>
+                <form>
+                    <div class="name_inputs">
+                    <!-- primer nombre -->
+                        <div>
+                            <label>Nombre</label><br>
+                            <input type="text" name="nombre" placeholder="Escribe tu nombre" class="name">
+                        </div>
+                    <!--Segundo Nombre -->
+                        <div>
+                            <label>Apellido</label><br>
+                            <input type="text" name="apellido" placeholder="Escribe tu apellido" class="last_name">
+                        </div>
+                    <!-- email -->
+                        <div>
+                            <label>Email</label><br>
+                            <input type="email" name="email" placeholder="Jhai@gmail.com" class="email">
+                        </div>
+                    <!-- textarea -->
+                        <div>
+                            <label>Comentarios</label><br>
+                            <textarea name="textarea" cols="30" rows="10" placeholder="Comentarios" class="comments"></textarea>
+                        </div>
+                    <!-- Boton enviar -->
+                        <div class="btn-form">
+                            <button type="submit" class="btn-send">
+                                Enviar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <!-- Sección Social Media -->
+                <p class="network">
+                    O siguenos en nuestras redes y contáctanos
+                </p>
+                <div class="social_media">
+                <!-- facebook -->
+                    <button type="submit" class="logofa">
+                        <a href="https://www.facebook.com/search/top?q=andrescooking" alt=facebook target="_blank" role="button"  class="iconfa">
+                            <i class="fab fa-facebook-f"></i>
+                        </a> 
+                    </button>
+                <!-- Instagram -->
+                    <button type="submit" class="logoIg">
+                        <a  href="https://www.instagram.com/andrescooking/" alt=instagram target="_blank" role="button" class="iconIg">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </button>
+                <!-- YouTube -->
+                    <button type="submit" class="logoYT">
+                        <a  href="https://www.youtube.com/c/andrescooking" alt=youTube target="_blank" role="button" class="iconYT
+                        ">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </button>
+                <!-- TikTok -->
+                    <button type="submit" class="logoTT">
+                        <a  href="https://www.tiktok.com/@andrescooking" alt=tiktok target="_blank" role="button">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container-footer">
+            <span>Sitio Web creado con &#128151 por &copy;JhaiRamos</span>
+        </div>
+    </footer>
 </body>
 </html>

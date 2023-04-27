@@ -1,3 +1,379 @@
+@import url("https://fonts.googleapis.com/css2? family= Hind+Siliguri & family= Open+Sans:wght@400;500 & family= Overpass:wght@400;500 & family= Tilt+Warp & display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Hind+Siliguri & family= Open+Sans:wght@400;500 & family= Overpass:wght@400;500 & family= Tilt+Warp & display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Tilt Warp", cursive;
+}
 
+.background_style, main .form-section .container_form, main .section_main .img-main {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header nav {
+  background-color: #100c0b;
+  height: 80px;
+}
+header nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+header nav .nav-container .title__header {
+  font-family: "Tilt Warp", cursive;
+  font-size: 36px;
+  color: rgb(240, 202, 33);
+  text-shadow: 2px 3px 10px rgb(150, 144, 144);
+}
+header nav .nav-container .nav_input, header nav .nav-container .nav__label {
+  display: none;
+  font-size: 30px;
+}
+@media screen and (max-width: 860px) {
+  header nav .nav-container .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+}
+header nav .nav-container .nav-menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3em;
+  list-style: none;
+}
+header nav .nav-container .nav-menu .item__nav, header nav .nav-container .nav-menu main .recipes__featured .btn_tips .btn_a, main .recipes__featured .btn_tips header nav .nav-container .nav-menu .btn_a, header nav .nav-container .nav-menu main .section_main .container-title .btn_portada .btn_link, main .section_main .container-title .btn_portada header nav .nav-container .nav-menu .btn_link {
+  color: aliceblue;
+  text-decoration: none;
+}
+header nav .nav-container .nav-menu .item__nav:hover, header nav .nav-container .nav-menu main .recipes__featured .btn_tips .btn_a:hover, main .recipes__featured .btn_tips header nav .nav-container .nav-menu .btn_a:hover, header nav .nav-container .nav-menu main .section_main .container-title .btn_portada .btn_link:hover, main .section_main .container-title .btn_portada header nav .nav-container .nav-menu .btn_link:hover {
+  color: antiquewhite;
+  text-shadow: 5px 5px 10px rgb(238, 235, 47);
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 860px) {
+  header nav .nav-container .nav-menu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background: #100f0f;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+    text-shadow: 5px 5px 10px rgb(238, 235, 47);
+  }
+}
+header nav .nav-container .nav_input:checked + .nav-menu {
+  clip-path: circle(100% at center);
+}
+
+main .section_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #100c0b;
+  color: antiquewhite;
+}
+@media screen and (max-width: 1074px) {
+  main .section_main {
+    flex-wrap: wrap;
+  }
+}
+main .section_main .img-main {
+  width: 60%;
+  height: 100vh;
+  z-index: 0;
+}
+main .section_main .container-title {
+  text-align: center;
+  margin-right: 50px;
+  z-index: 1;
+  font-size: 30px;
+}
+@media screen and (max-width: 654px) {
+  main .section_main .container-title {
+    margin-right: 0px;
+  }
+}
+main .section_main .container-title .title-portada {
+  line-height: 60px;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgb(231, 215, 137);
+}
+@media screen and (max-width: 654px) {
+  main .section_main .container-title .title-portada {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 438px) {
+  main .section_main .container-title .title-portada {
+    font-size: 30px;
+  }
+}
+main .section_main .container-title .btn_portada {
+  font-size: 22px;
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 35px;
+  font-family: "Tilt Warp", cursive;
+  background-color: rgb(251, 176, 63);
+}
+main .section_main .container-title .btn_portada .btn_link {
+  color: #4d4837;
+}
+main .section_main .container-title .btn_portada .btn_link:hover {
+  color: #ebeae0;
+}
+@media screen and (max-width: 654px) {
+  main .section_main .container-title .btn_portada {
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+}
+main .container_section_destacada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(110deg, rgb(221, 151, 64) 0%, rgb(222, 180, 141) 30%, rgb(236, 225, 98) 100%);
+}
+main .container_section_destacada .title__section2, main .container_section_destacada .paragraph__section2 {
+  font-size: 30px;
+  margin-left: 25px;
+  text-align: center;
+  color: #2c2b25;
+}
+main .carrousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+main .carrousel .elementos_destacados {
+  flex: 1 0 auto;
+  width: 300px;
+  height: 300px;
+  margin: 25px;
+  padding: 10px;
+}
+main .carrousel .elementos_destacados .img_galeria {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 6px black;
+  transition: all 0.8s ease;
+}
+main .carrousel .elementos_destacados .img_galeria:hover {
+  transform: scale(0.9);
+}
+main .recipes__featured {
+  width: 100%;
+  height: 230px;
+  text-align: center;
+  background: linear-gradient(110deg, rgb(221, 151, 64) 0%, rgb(222, 180, 141) 30%, rgb(236, 225, 98) 100%);
+  padding: 15px;
+}
+@media screen and (max-width: 1074px) {
+  main .recipes__featured {
+    height: 300px;
+  }
+}
+main .recipes__featured .title__section2, main .recipes__featured .paragraph__section2 {
+  font-size: 28px;
+  margin-top: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2c2b25;
+}
+@media screen and (max-width: 860px) {
+  main .recipes__featured .title__section2, main .recipes__featured .paragraph__section2 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+}
+main .recipes__featured .btn_tips {
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  margin-top: 25px;
+  background-color: rgb(251, 176, 63);
+  border: none;
+}
+@media screen and (max-width: 438px) {
+  main .recipes__featured .btn_tips {
+    margin-top: 10px;
+  }
+}
+main .recipes__featured .btn_tips:hover {
+  box-shadow: 0 0 6px black;
+}
+main .recipes__featured .btn_tips .btn_a {
+  font-size: 20px;
+  color: #2c2b25;
+  text-decoration: none;
+}
+main .recipes__featured .btn_tips .btn_a .fa-thumbs-up {
+  margin-right: 5px;
+}
+main .form-section {
+  display: grid;
+  place-items: center;
+  background-color: antiquewhite;
+}
+main .form-section .container_form {
+  width: 50%;
+  background-image: url(../img/Img-form.jpg);
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 860px) {
+  main .form-section .container_form {
+    width: 100%;
+  }
+}
+main .form-section .container_form .title-form {
+  font-size: 32px;
+}
+main .form-section .container_form form label {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+main .form-section .container_form form input, main .form-section .container_form form textarea {
+  padding: 15px 20px;
+  border-radius: 3px;
+  border: 2px solid transparent;
+  width: 90%;
+  margin: 3px 0;
+}
+main .form-section .container_form form input::placeholder, main .form-section .container_form form textarea::placeholder {
+  font-size: 16px;
+  color: #5D698D;
+  border: none;
+}
+main .form-section .container_form form .btn-form {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+main .form-section .container_form form .btn-form .btn-send {
+  width: 40%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(251, 176, 63);
+}
+main .form-section .container_form form .btn-form .btn-send:hover {
+  background-color: rgb(227, 140, 9);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+main .form-section .container_form .network {
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
+}
+@media screen and (max-width: 860px) {
+  main .form-section .container_form .network {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+}
+main .form-section .container_form .social_media {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 20px 20px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 860px) {
+  main .form-section .container_form .social_media {
+    margin: 0px;
+  }
+}
+main .form-section .container_form .social_media .logofa, main .form-section .container_form .social_media .logoIg, main .form-section .container_form .social_media .logoYT, main .form-section .container_form .social_media .logoTT {
+  padding: 10px 30px;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 24px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+}
+@media screen and (max-width: 860px) {
+  main .form-section .container_form .social_media .logofa, main .form-section .container_form .social_media .logoIg, main .form-section .container_form .social_media .logoYT, main .form-section .container_form .social_media .logoTT {
+    padding: 5px 20px;
+  }
+}
+@media screen and (max-width: 654px) {
+  main .form-section .container_form .social_media .logofa, main .form-section .container_form .social_media .logoIg, main .form-section .container_form .social_media .logoYT, main .form-section .container_form .social_media .logoTT {
+    padding: 5px 15px;
+  }
+}
+@media screen and (max-width: 438px) {
+  main .form-section .container_form .social_media .logofa, main .form-section .container_form .social_media .logoIg, main .form-section .container_form .social_media .logoYT, main .form-section .container_form .social_media .logoTT {
+    padding: 3px 10px;
+  }
+}
+main .form-section .container_form .social_media .logofa:hover, main .form-section .container_form .social_media .logoIg:hover, main .form-section .container_form .social_media .logoYT:hover, main .form-section .container_form .social_media .logoTT:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1) 0px 10px 20px rgba(43, 20, 11, 0.315);
+  transition: all 0.5s ease-in-out 0s;
+}
+main .form-section .container_form .social_media .logofa.logofa:hover, main .form-section .container_form .social_media .logoIg.logofa:hover, main .form-section .container_form .social_media .logoYT.logofa:hover, main .form-section .container_form .social_media .logoTT.logofa:hover {
+  background-color: #1771e6;
+}
+main .form-section .container_form .social_media .logofa.logofa:hover .fa-facebook-f, main .form-section .container_form .social_media .logoIg.logofa:hover .fa-facebook-f, main .form-section .container_form .social_media .logoYT.logofa:hover .fa-facebook-f, main .form-section .container_form .social_media .logoTT.logofa:hover .fa-facebook-f {
+  color: #ebeae0;
+}
+main .form-section .container_form .social_media .logofa.logoIg:hover, main .form-section .container_form .social_media .logoIg.logoIg:hover, main .form-section .container_form .social_media .logoYT.logoIg:hover, main .form-section .container_form .social_media .logoTT.logoIg:hover {
+  background-color: #ebeae0;
+}
+main .form-section .container_form .social_media .logofa.logoIg:hover .fa-instagram, main .form-section .container_form .social_media .logoIg.logoIg:hover .fa-instagram, main .form-section .container_form .social_media .logoYT.logoIg:hover .fa-instagram, main .form-section .container_form .social_media .logoTT.logoIg:hover .fa-instagram {
+  background: linear-gradient(49deg, #f9ed32, #ee2a7b, #002aff);
+  color: #ebeae0;
+  border-radius: 7px;
+}
+main .form-section .container_form .social_media .logofa.logoYT:hover .fa-youtube, main .form-section .container_form .social_media .logoIg.logoYT:hover .fa-youtube, main .form-section .container_form .social_media .logoYT.logoYT:hover .fa-youtube, main .form-section .container_form .social_media .logoTT.logoYT:hover .fa-youtube {
+  color: red;
+}
+main .form-section .container_form .social_media .logofa.logoTT:hover, main .form-section .container_form .social_media .logoIg.logoTT:hover, main .form-section .container_form .social_media .logoYT.logoTT:hover, main .form-section .container_form .social_media .logoTT.logoTT:hover {
+  background-color: #100c0b;
+}
+main .form-section .container_form .social_media .logofa.logoTT:hover .fa-tiktok, main .form-section .container_form .social_media .logoIg.logoTT:hover .fa-tiktok, main .form-section .container_form .social_media .logoYT.logoTT:hover .fa-tiktok, main .form-section .container_form .social_media .logoTT.logoTT:hover .fa-tiktok {
+  color: #ebeae0;
+}
+
+footer {
+  height: 100px;
+  margin-top: 1px;
+}
+footer .container-footer {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(110deg, rgb(221, 151, 64) 0%, rgb(222, 180, 141) 30%, rgb(236, 225, 98) 100%);
+}
+@media screen and (max-width: 438px) {
+  footer .container-footer {
+    padding: 3px 10px;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
