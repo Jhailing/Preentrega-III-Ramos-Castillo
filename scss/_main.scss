@@ -58,6 +58,7 @@ main{
             }
         }
     }
+
     // Sección recetas destacadas
     .container_section_destacada{
         @include box-flex(center, center, nowrap);
@@ -82,7 +83,6 @@ main{
             height: 300px;
             margin: 25px;
             padding: 10px;
-        
             .img_galeria{
                 width: $width;
                 height: 100%;
@@ -264,7 +264,7 @@ main{
 
 // main recetas html
 .main_recipes{
-    width: 100%;
+    width: $width;
     .to-back{
         height: 30px;
         border: $border;
@@ -280,7 +280,7 @@ main{
     }
     .recipes-title{
         @include box-flextwo(center,center);
-        width: 100%;
+        width: $width;
         height: 50px;
         .input_recipes{
             width: 500px;
@@ -295,20 +295,20 @@ main{
         }
         .search-btn{
             font-size: 35px;
-            background-color: white;
-            border: none;
+            background-color: $color-media;
+            border: $border;
             border-radius: 5px;
             margin-left: 5px;
             cursor: pointer;
         }
     }
     .container_paragraph{
-        width: 100%;
+        width: $width;
         margin-top: 25px;
         margin: 10px 10px;
         text-align: center;
         @include tablet {
-            width: 100%;
+            width: $width;
             margin: 0px 0px;
         }
         h1{
@@ -327,7 +327,7 @@ main{
         }
     }
     .container-galeria{
-        width: 100%;
+        width: $width;
         display: flex;
         flex-flow: wrap;
         justify-content: center;
@@ -348,17 +348,14 @@ main{
                 @include mini-mobile{
                     max-width: 250px;
                 }
-            }
-            
-                
+            }       
         }
-        
     }
 }
 
 // Main HTML Recomienda
 .main_recomienda{
-    width: 100%;
+    width: $width;
     .to-back{
         height: 30px;
         border: $border;
@@ -373,12 +370,12 @@ main{
         }
     }
     .container_paragraph{
-            width: 100%;
+            width: $width;
             margin-top: 25px;
             margin: 10px 10px;
             text-align: center;
             @include tablet {
-                width: 100%;
+                width: $width;
                 margin: 0px 0px;
             }
             h1{
@@ -397,7 +394,7 @@ main{
             }
         }
         .container-galeria{
-            width: 100%;
+            width: $width;
             display: flex;
             flex-flow: wrap;
             justify-content: center;
@@ -422,16 +419,14 @@ main{
             }
         }
         .btn-recomienda{
-            width: 100%;
+            @include box-flextwo(center,center);
+            width: $width;
             height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             button{
                 width: 200px;
                 height: 35px;
                 border-radius: 8px;
-                border: none;
+                border: $border;
                 box-shadow: 0 0 6px black;
                 transition: all 0.8s ease;
                 background-color: $color-btn;
@@ -452,7 +447,33 @@ main{
         margin: 5px;
     }
 }
-
+// Glosario main HTML
+nav{
+    display: flex;
+    justify-content: center;
+    .items{
+        @include box-flextwo(center,center);
+        max-width: 720px;
+        width: 100%;
+        @include mobile{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item{
+            padding: 7px 25px;
+            font-size: 18px;
+            font-weight: 500;
+            color: $color-btn;
+            border: 2px solid $color-btn;
+            border-radius: 50px;
+            cursor: pointer;
+            &:hover{
+                color: white;
+                background-color: $color-btn;
+            }
+        }
+    }
+}
 
 
 

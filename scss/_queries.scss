@@ -1,4 +1,4 @@
-// header
+// Pantallas medianas
 @mixin tablet {
     @media screen and (max-width: 860px) {
         @content;
@@ -16,7 +16,7 @@
         @content;
     }
 }
-
+// pantallas pequeñas
 @mixin mini-mobile {
     @media screen and (max-width: 438px) {
         @content;
