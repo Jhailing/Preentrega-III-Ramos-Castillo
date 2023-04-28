@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2? family= Hind+Siliguri & family= Open+Sans:wght@400;500 & family= Overpass:wght@400;500 & family= Tilt+Warp & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Hind+Siliguri & family= Open+Sans:wght@400;500 & family= Overpass:wght@400;500 & family= Tilt+Warp & display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -402,7 +401,7 @@ main .form-section .container_form .social_media .logofa.logoTT:hover .fa-tiktok
 }
 .main_recipes .recipes-title .search-btn {
   font-size: 35px;
-  background-color: white;
+  background-color: #ebeae0;
   border: none;
   border-radius: 5px;
   margin-left: 5px;
@@ -540,11 +539,11 @@ main .form-section .container_form .social_media .logofa.logoTT:hover .fa-tiktok
   }
 }
 .main_recomienda .btn-recomienda {
-  width: 100%;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 50px;
 }
 .main_recomienda .btn-recomienda button {
   width: 200px;
@@ -570,6 +569,37 @@ main .form-section .container_form .social_media .logofa.logoTT:hover .fa-tiktok
     font-size: 18px;
     margin: 5px;
   }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  width: 100%;
+}
+@media screen and (max-width: 654px) {
+  nav .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+nav .items .item {
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(251, 176, 63);
+  border: 2px solid rgb(251, 176, 63);
+  border-radius: 50px;
+  cursor: pointer;
+}
+nav .items .item:hover {
+  color: white;
+  background-color: rgb(251, 176, 63);
 }
 
 footer {
